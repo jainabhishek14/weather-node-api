@@ -25,9 +25,9 @@ const fetchWeathers = locations => {
 exports.getWeather = async (request, response) => {
   if(request.body.hasOwnProperty("locations") && Array.isArray(request.body.locations)){
     const weather = await fetchWeathers(request.body.locations).then(data => data).catch(error => console.log(error))
-    response.status(200).json({ "message": "successful", "data":  weather})
+    response.status(200).json({ "data":  weather})
   } else {
-    response.status(400).json({"message": "Invalid inputs", "description": "Invalid or missing locations"})
+    response.status(400).json({"message": "Invalid or missing locations"})
   }
   
 }
