@@ -2,7 +2,7 @@
 
 This service fetches the weather information for given list of citiies or zipcode.
 
-    Technology Stack: Node, Express JS, APIXU Weather API
+    Technology Stack: Node, Express JS, APIXU Weather API, Chai,  Mocha
     Owner: Abhishek Jain
 
 # Endpoints 
